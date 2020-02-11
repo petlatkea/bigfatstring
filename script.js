@@ -36,7 +36,13 @@ function generateOutput( event ) {
       break;
     }
     case "filecheck": {
-
+      if( input.endsWith(".png") ) {
+        output = "File is png";
+      } else if( input.endsWith(".jpg") || input.endsWith(".jpeg")) {
+        output = "File is jpg";
+      } else {
+        output = "File is something else ...";
+      }
       break;
     }
     case "password": {
