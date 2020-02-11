@@ -1,0 +1,27 @@
+form {
+  display: grid;
+  grid: auto / 100px;
+}
+
+input,
+select {
+  font-size: 100%;
+  grid-column: 2 / 5;
+}
+
+label {
+  grid-column-start: 1;
+}
+select {
+  grid-column: 2 / 5;
+}
+
+output {
+  border: 2px outset lightgray;
+  background-color: lightgrey;
+}
+
+button {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
