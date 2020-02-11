@@ -31,16 +31,26 @@ function generateOutput( event ) {
       output = input.substring(0, firstSpace).length;
       break;
     }
-    case "middlename":
+    case "middlename": {
+
       break;
-    case "filecheck":
+    }
+    case "filecheck": {
+
       break;
-    case "password":
+    }
+    case "password": {
+
       break;
-    case "3capitalize":
+    }
+    case "3capitalize": {
+
       break;
-    case "hyphen":
+    }
+    case "hyphen": {
+
       break;
+    }
   }
 
   document.querySelector("#output").textContent = output;
