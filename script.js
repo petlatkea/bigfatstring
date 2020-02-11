@@ -52,7 +52,7 @@ function generateOutput( event ) {
       break;
     }
     case "3capitalize": {
-
+      output = input.substring(0,2) + input.charAt(2).toUpperCase() + input.substring(3);
       break;
     }
     case "hyphen": {
