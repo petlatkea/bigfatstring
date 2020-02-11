@@ -35,8 +35,6 @@ function generateOutput( event ) {
     case "hyphen":
       break;
   }
-  // TEST Only - REMOVE!!!
-  output = input;
 
   document.querySelector("#output").textContent = output;
 
