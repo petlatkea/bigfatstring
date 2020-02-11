@@ -21,6 +21,8 @@ function generateOutput( event ) {
     case "capitalize":
       break;
     case "firstname":
+      const firstSpace = input.indexOf(" ");
+      output = input.substring(0, firstSpace);
       break;
     case "firstlength":
       break;
@@ -35,8 +37,7 @@ function generateOutput( event ) {
     case "hyphen":
       break;
   }
-  // TEST Only - REMOVE!!!
-  output = input;
+  
 
   document.querySelector("#output").textContent = output;
 
