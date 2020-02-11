@@ -56,7 +56,17 @@ function generateOutput( event ) {
       break;
     }
     case "hyphen": {
-
+      let lastChar = " ";
+      // Can't this be solved in a simpler way?
+      output = Array.from(input).map( char => {
+        let res = char;
+        if( lastChar === " " || lastChar === "-" ) {
+          res = char.toUpperCase();
+        } 
+        lastChar = char;
+        return res;
+        
+      } ).join("");
       break;
     }
   }
