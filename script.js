@@ -21,12 +21,16 @@ function generateOutput( event ) {
     case "capitalize":
       output = input.charAt(0).toUpperCase() + input.substring(1).toLowerCase();
       break;
-    case "firstname":
+    case "firstname": {
       const firstSpace = input.indexOf(" ");
       output = input.substring(0, firstSpace);
       break;
-    case "firstlength":
+    }
+    case "firstlength": {
+      const firstSpace = input.indexOf(" ");
+      output = input.substring(0, firstSpace).length;
       break;
+    }
     case "middlename":
       break;
     case "filecheck":
