@@ -32,7 +32,9 @@ function generateOutput( event ) {
       break;
     }
     case "middlename": {
-
+      const firstSpace = input.indexOf(" ");
+      const lastSpace = input.lastIndexOf(" ");
+      output = input.substring(firstSpace,lastSpace);
       break;
     }
     case "filecheck": {
