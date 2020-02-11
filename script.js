@@ -48,7 +48,7 @@ function generateOutput( event ) {
       break;
     }
     case "password": {
-
+      output = "*".repeat( input.length );
       break;
     }
     case "3capitalize": {
