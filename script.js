@@ -22,6 +22,8 @@ function generateOutput( event ) {
       output = input.charAt(0).toUpperCase() + input.substring(1).toLowerCase();
       break;
     case "firstname":
+      const firstSpace = input.indexOf(" ");
+      output = input.substring(0, firstSpace);
       break;
     case "firstlength":
       break;
@@ -38,5 +40,4 @@ function generateOutput( event ) {
   }
 
   document.querySelector("#output").textContent = output;
-
 }
