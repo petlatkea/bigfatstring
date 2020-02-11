@@ -19,6 +19,7 @@ function generateOutput( event ) {
 
   switch( choice ) {
     case "capitalize":
+      output = input.charAt(0).toUpperCase() + input.substring(1).toLowerCase();
       break;
     case "firstname":
       break;
@@ -35,8 +36,6 @@ function generateOutput( event ) {
     case "hyphen":
       break;
   }
-  // TEST Only - REMOVE!!!
-  output = input;
 
   document.querySelector("#output").textContent = output;
 
