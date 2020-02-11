@@ -19,6 +19,7 @@ function generateOutput( event ) {
 
   switch( choice ) {
     case "capitalize":
+      output = input.charAt(0).toUpperCase() + input.substring(1).toLowerCase();
       break;
     case "firstname":
       break;
