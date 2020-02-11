@@ -14,7 +14,7 @@ function generateOutput( event ) {
   const choice = document.querySelector("#choice").value;
   console.log(`Choice: ${choice}`);
 
-  const input = document.querySelector("#input").value;
+  const input = document.querySelector("#input").value.trim();
   let output = "";
 
   switch( choice ) {
